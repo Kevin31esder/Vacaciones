@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/system";
+import "./App.css";
+import Comentarios from "./Components/Comentarios";
+import InformacionGeneral from "./Components/InformacionGeneral";
+import Menus from "./Components/Menus";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menus />
+      <InformacionGeneral />
+      <Comentarios />
     </div>
   );
 }
